@@ -1,0 +1,247 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bgcolor: #ffffff;
+  --secondary-bgcolor: #2f303a;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary-bgcolor);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.link {
+  text-decoration: unset;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Header */
+
+/* Logo */
+
+.logo {
+  text-decoration: unset;
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-first {
+  color: var(--accent-color);
+}
+
+/* Main navigation */
+
+.site-nav .link {
+  text-decoration: unset;
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .list-item,
+.auth-nav .list-item {
+  display: inline-block;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.auth-nav .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero title*/
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: var(--secondary-bgcolor); /* temporarily add-ons for visualization */
+}
+
+/* Hero button */
+
+.hero-button {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+/* Features section */
+
+.section-features {
+  line-height: 1.71;
+}
+
+.section-features .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features > .list-item {
+  display: inline-block;
+}
+
+/* Occupation section */
+
+.section-occupation > .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.occupation > .list-item {
+  display: inline-block;
+}
+
+/* Our tem section */
+
+.section-team {
+  background-color: #e5e5e5;
+}
+
+.section-team > .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.team-unit {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.unit-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team > .list-item {
+  display: inline-block;
+  background-color: var(--primary-bgcolor);
+}
+
+/* Footer */
+
+.section-address {
+  background-color: var(--secondary-bgcolor);
+  line-height: 1.71;
+}
+
+.section-address .logo {
+  color: #ffffff;
+}
+
+.section-address .map-address {
+  font-style: normal;
+  color: #ffffff;
+}
+
+.section-address .email,
+.section-address .phone {
+  font-style: normal;
+  color: #ffffff99;
+}
+
+.section-address .link:hover,
+.section-address .link:focus {
+  color: var(--accent-color);
+}
+
+/* PORTFOLIO PAGE PORTFOLIO PAGE PORTFOLIO PAGE PORTFOLIO PAGE PORTFOLIO PAGE PORTFOLIO PAGE */
+
+/* Works filter */
+
+.filter > .list-item {
+  display: inline-block;
+}
+
+.filter-button {
+  background-color: #f5f4fa;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.filter-items .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.filter-items .filter-type {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}
