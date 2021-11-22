@@ -160,12 +160,12 @@ h4 {
 }
 
 .section-features > .features {
-  margin: 94px auto;
+  margin: 94px auto 0px;
+  background-color: teal;
 }
 
 .section-features .features-list {
   line-height: 1.71;
-  background-color: teal;
   display: flex;
 }
 
@@ -179,14 +179,22 @@ h4 {
 
 /* Occupation section */
 
-.section-occupation > .section-title {
+.section-occupation .occupation {
+  text-align: center;
+  background-color: rgb(213, 213, 255);
+  margin: 94px auto 0px;
+}
+
+.section-occupation .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+
+  margin: 0px auto 50px;
 }
 
-.occupation > .list-item {
-  display: inline-block;
+.section-occupation .occupation-list {
+  display: flex;
 }
 
 /* Our tem section */
