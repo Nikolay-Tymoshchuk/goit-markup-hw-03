@@ -38,6 +38,10 @@ h4 {
   color: var(--title-text-color);
 }
 
+.wrap {
+  width: 1600px;
+  margin: 0px auto;
+}
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -47,10 +51,11 @@ h4 {
 /* Header */
 
 .top-bar {
+  padding-bottom: 25px;
+  padding-top: 24px;
   display: flex;
   align-items: center;
-  height: 80px;
-  background-color: tomato;
+  border-bottom: 1px solid #ececec;
 }
 
 /* Logo */
@@ -110,15 +115,18 @@ h4 {
   color: var(--accent-color);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* Hero title*/
 
-.section-hero {
-  padding: 200px;
+.hero {
   background-color: var(--secondary-bgcolor); /* temporarily add-ons for visualization */
   text-align: center;
 }
 
-.section-hero > .hero-title {
+.hero > .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -126,13 +134,12 @@ h4 {
   letter-spacing: 0.06em;
   color: #ffffff;
   text-transform: uppercase;
-
-  padding: 0px;
+  margin: 0 0 30px;
 }
 
 /* Hero button */
 
-.section-hero > .hero-button {
+.hero > .hero-button {
   color: #ffffff;
   background-color: var(--accent-color);
 
@@ -142,7 +149,6 @@ h4 {
   letter-spacing: 0.06em;
   cursor: pointer;
 
-  margin: 30px 0 0;
   padding: 10px 32px;
   display: inline-block;
   min-width: 200px;
@@ -152,19 +158,14 @@ h4 {
 
 /* Features section */
 
-.section-features .title {
+.features .title {
   color: var(--title-text-color);
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.section-features > .features {
-  margin: 94px auto 0px;
-  background-color: teal;
-}
-
-.section-features .features-list {
+.features .features-list {
   line-height: 1.71;
   display: flex;
 }
@@ -179,13 +180,15 @@ h4 {
 
 /* Occupation section */
 
-.section-occupation .occupation {
-  text-align: center;
-  background-color: rgb(213, 213, 255);
-  margin: 94px auto 0px;
+.section.occupation {
+  padding-top: 0px;
 }
 
-.section-occupation .section-title {
+.occupation .occupation-shell {
+  text-align: center;
+}
+
+.occupation .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -193,65 +196,89 @@ h4 {
   margin: 0px auto 50px;
 }
 
-.section-occupation .occupation-list {
+.occupation .occupation-list {
   display: flex;
+}
+
+.occupation-list > .list-item {
+  line-height: 0;
+}
+
+.occupation-list > .list-item:not(:first-child) {
+  margin-left: 30px;
 }
 
 /* Our tem section */
 
-.section-team {
+.team {
   background-color: #e5e5e5;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
-.section-team > .section-title {
+.team .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+
+  margin-bottom: 50px;
+}
+
+.team .team-list {
+  display: flex;
+}
+
+.team-list > .list-item {
+  width: calc((100%-90px) / 4);
+  background-color: var(--primary-bgcolor);
+  text-align: center;
+}
+
+.team-list > .list-item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .team-unit {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .unit-position {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-}
-
-.team > .list-item {
-  display: inline-block;
-  background-color: var(--primary-bgcolor);
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 /* Footer */
 
-.section-address {
+.bottom {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-bgcolor);
   line-height: 1.71;
 }
 
-.section-address .logo {
+.bottom .logo {
   color: #ffffff;
 }
 
-.section-address .map-address {
+.bottom .bottom-list {
+  margin-top: 20px;
+}
+
+.bottom .map-address {
   font-style: normal;
   color: #ffffff;
 }
 
-.section-address .email,
-.section-address .phone {
+.bottom .mailphone {
   font-style: normal;
   color: #ffffff99;
 }
 
-.section-address .link:hover,
-.section-address .link:focus {
+.bottom .link:hover,
+.bottom .link:focus {
   color: var(--accent-color);
 }
 
@@ -292,3 +319,7 @@ h4 {
   font-size: 16px;
   line-height: 1.87;
 }
+
+/* .occupation-list > .list-item {
+  line-height: 0;
+} */
