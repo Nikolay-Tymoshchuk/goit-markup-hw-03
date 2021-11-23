@@ -133,7 +133,6 @@ img {
 /* Hero title*/
 
 .hero {
-  height: 600px;
   padding: 200px 0;
   background-color: var(--secondary-bgcolor); /* temporarily add-ons for visualization */
   text-align: center;
